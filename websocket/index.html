@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Get CPU Load</title>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+
+<div id="app">
+     <cpuload v-bind:cpu-message="cpuUsage" v-bind:style="styleObjectBefore"></cpuload>
+</div>
+
+
+<!-- Here shown incoming messages -->
+<div id="subscribe"></div>
+
+
+<script src="browser.js"></script>
+
+</body>
+</html>
